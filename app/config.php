@@ -8,7 +8,7 @@
  */
 
 $_config = array(
-	'base_url'				=>'http://localhost/tesis',
+	'base_url'				=>'localhost/tesis',
 	'default_controller'	=>'Principal',
 	'language'				=>'english',
 	'charset'				=>'UTF-8',
@@ -30,6 +30,7 @@ $db_var = array(
 	'password'				=>'',
 	'database'				=>'test',
 	'dbdriver'				=>'mysql',
+	'dbport'				=>'3306',
 	'dbprefix'				=>'',
 	'dbdebug'				=>TRUE,
 	'charset'				=>'UTF-8'

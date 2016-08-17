@@ -41,7 +41,10 @@ class App{
 		foreach ($this->config['include_paths'] as $inc) {
 			$this->preload("app/".$inc,true);
 		}
-		if($this->config['db_autoconn'])$this->DB->connect($this->config['db_var']);
+		if($this->config['db_autoconn']){
+			$this->DB->setDriver($this->config['db_var']);
+			$this->DB->connect();
+		}
 		$this->init();
 	}
 
